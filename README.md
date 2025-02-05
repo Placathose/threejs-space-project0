@@ -2,7 +2,7 @@
 This repo is one of my experiment trying to learn THREE js and how 3D works on the web. I used a tutorial from fireship and its provided repo to learn the basics.
 
 ## My Plan
-Here is a breakdown of how I want to accomplish
+### **Here is a breakdown of how I want to accomplish:**
 
 1. Try to read and understand what the different sections of the code does.
 2. Watch the tutorial to get an explanation on things I do not understand.

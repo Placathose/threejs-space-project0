@@ -36,9 +36,9 @@ scene.add(torus);
 
 // 3. Adding lights
 const pointLight = new THREE.PointLight(0xffffff, 110, 100 );
-pointLight.position.set(2, 2, 5)
+pointLight.position.set(5, 5, 10)
 
-const ambientLight = new THREE.AmbientLight(0x1f1d1d, 5, 50 )
+const ambientLight = new THREE.AmbientLight(0x1f1d1d, 80, 10 )
 scene.add(pointLight, ambientLight);
 
 // 4. Helpers (Things to help you visualize better the scene)
@@ -85,12 +85,12 @@ const trippyCube = new THREE.Mesh(
 // scene.add(trippyCube);
 
 // 8. Texture Mapping on sphere
-const marsTexture = new THREE.TextureLoader('Mars-texture.jpeg')
-const normalTexture = new THREE.TextureLoader('normal.jpg')
+const marsTexture = new THREE.TextureLoader().load('Mars-texture.jpeg');
+const normalTexture = new THREE.TextureLoader().load('normal.jpg')
 
 const mars = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
-  new THREE.MeshStandardMaterial({ map: marsTexture})
+  new THREE.MeshStandardMaterial({ map: marsTexture })
 )
 
 scene.add(mars)
